@@ -624,7 +624,7 @@ static void error1(int mode, const char *fmt, va_list ap)
     CString cs;
     int line = 0;
 
-    tcc_exit_state(s1);
+    // tcc_exit_state(s1);
 
     if (mode == ERROR_WARN) {
         if (s1->warn_error)
