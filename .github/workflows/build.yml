@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tcc-win-x86_64
-          path: win
+          path: win32
 
   test-i386-win32:
     runs-on: windows-2025
@@ -93,7 +93,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tcc-win-i386
-          path: win
+          path: win32
 
   test-armv7-linux:
     runs-on: ubuntu-22.04
