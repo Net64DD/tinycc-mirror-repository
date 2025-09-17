@@ -711,8 +711,8 @@ PUB_FUNC void _tcc_error(const char *fmt, ...)
 {
     va_list ap;
     va_start(ap, fmt);
-    error1(ERROR_ERROR, fmt, ap);
-    exit(1);
+    error1(ERROR_NOABORT, fmt, ap);
+    va_end(ap);
 }
 #define _tcc_error use_tcc_error_noabort
 
