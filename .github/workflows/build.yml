@@ -57,7 +57,7 @@ jobs:
           .\tcc -I.. libtcc.dll -v ../tests/libtcc_test.c -o libtest.exe && .\libtest.exe
           .\tcc -I.. libtcc.dll -run ../tests/libtcc_test.c
       - name: Upload Windows artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: tcc-win-x86_64
           path: win
@@ -90,7 +90,7 @@ jobs:
           .\tcc -I.. libtcc.dll -v ../tests/libtcc_test.c -o libtest.exe && .\libtest.exe
           .\tcc -I.. libtcc.dll -run ../tests/libtcc_test.c
       - name: Upload Windows artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: tcc-win-i386
           path: win
